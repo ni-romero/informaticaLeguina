@@ -1,0 +1,69 @@
+.logoNav{
+    height: 50px !important;
+  }
+  .imgcarr{
+    height: 90vh;
+    width: 100vw;
+  }
+  .navPadre{
+  
+    background-color: rgba(0, 0, 0, 0.6)!important;
+  }
+  .padreGral{
+    /* background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/35595wide.jpg); */
+    height: auto;
+    background-color: rgb(8, 8, 8);
+    /* background-image: url(https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80); */
+  }
+  
+  .padreServ{
+    height: 90vh;
+    margin: auto;
+  }
+  .single-services{
+    margin: 40px;
+  }
+  .acercaPadre{
+    height: 85vh;
+    background-color: rgb(5, 5, 5);
+  }
+  
+  .padrePregMas {
+    background-color: rgb(5, 5, 5);
+    color: white!important;
+  }
+  .section-headlineUlt{
+    background-color: rgb(5, 5, 5);
+    color: white!important;
+  }
+  .padrePreg{
+    background-color:rgb(5, 5, 5);
+  }
+  
+  /* .parrPreg{
+  color:black !important;
+  
+  } */
+  .cartaPreg{
+  color: white;
+   border-radius: 20px;
+   background-color: rgb(5, 5, 5);
+   margin: 50px;
+  }
+  .cartaPreg:hover{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border: solid 1px rgb(9, 68, 95) ;
+  }
+  .padreTeam{
+    height: 80vh;
+    padding: 50px;
+  
+  }
+  .imgIndiv{
+    border: solid 1px wheat;
+    border-radius: 10px;
+  }
+  .imgIndiv:hover{
+    border:solid 2px rgb(9, 68, 95) ;
+  }
