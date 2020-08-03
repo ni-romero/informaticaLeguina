@@ -1,3 +1,6 @@
+*{
+  font-family: 'Red Rose', cursive;
+}
 .logoNav{
     height: 50px !important;
   }
@@ -10,10 +13,13 @@
     background-color: rgba(0, 0, 0, 0.6)!important;
   }
   .padreGral{
-    /* background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/35595wide.jpg); */
-    height: auto;
-    background-color: rgb(8, 8, 8);
-    /* background-image: url(https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80); */
+    /* background-image: url(https://images.unsplash.com/photo-1571639543218-31008677212d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); */
+    background-image: url(https://images.unsplash.com/photo-1480374178950-b2c449be122e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+ 	font-family:helvetica, arial, sans-serif;
+	line-height:20px;  
   }
   
   .padreServ{
@@ -25,19 +31,23 @@
   }
   .acercaPadre{
     height: 85vh;
-    background-color: rgb(5, 5, 5);
+    background-color: white;
+      opacity: 0.9;
   }
   
   .padrePregMas {
-    background-color: rgb(5, 5, 5);
-    color: white!important;
+    background-color: rgb(252, 249, 249);
+    color: rgb(12, 12, 12)!important;
+    opacity: 0.9;
+    height: 80vh;
   }
   .section-headlineUlt{
-    background-color: rgb(5, 5, 5);
-    color: white!important;
+    background-color: white;
+    color: black!important;
+    opacity: 0.9;
   }
   .padrePreg{
-    background-color:rgb(5, 5, 5);
+    background-color:white;
   }
   
   /* .parrPreg{
@@ -45,14 +55,14 @@
   
   } */
   .cartaPreg{
-  color: white;
-   border-radius: 5px;
-   background-color: rgb(5, 5, 5);
+  color:black;
+   /* border-radius: 5px; */
+   background-color: white;
   
   }
   .cartaPreg:hover{
-    background-color: rgb(32, 32, 32);
-    color: white;
+    background-color: rgb(151, 150, 150);
+    color: rgb(0, 0, 0);
     border: solid 1px rgb(9, 68, 95) ;
   }
   .padreTeam{
@@ -105,6 +115,9 @@
   }
   .imgAlgunTrab{
     height: 300px;
+  }
+  .footer{
+    background-color: black;
   }
   @media (min-width: 300px) and (max-width: 850px) {
     .mapaCont{
