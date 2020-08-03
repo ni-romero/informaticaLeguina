@@ -46,9 +46,9 @@
   } */
   .cartaPreg{
   color: white;
-   border-radius: 20px;
+   border-radius: 5px;
    background-color: rgb(5, 5, 5);
-   margin: 50px;
+  
   }
   .cartaPreg:hover{
     background-color: rgb(32, 32, 32);
@@ -60,10 +60,63 @@
     padding: 50px;
   
   }
+
+  .section-headline-Contact h2{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    position: relative;
+    text-transform: capitalize;
+    color: rgb(245, 245, 245) !important;
+  
+  }
+  
+  .section-headline h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    position: relative;
+    text-transform: capitalize;
+    color: rgb(17, 17, 17);
+  
+  }
+  
+  .section-headline h2::after {
+    border: 1px solid rgb(228, 225, 225);
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
   .imgIndiv{
     border: solid 1px wheat;
     border-radius: 10px;
+    height: 250px;
   }
   .imgIndiv:hover{
     border:solid 2px rgb(9, 68, 95) ;
+  }
+  .imgAlgunTrab{
+    height: 300px;
+  }
+  @media (min-width: 300px) and (max-width: 850px) {
+    .mapaCont{
+      width: 90%;
+    }
+    .imgAlgunTrab{
+      width: 100%;
+    }
+    .formCont{
+      width: 90%;
+    }
+    .cartaPreg{
+      width: 95vw;
+    }
   }
