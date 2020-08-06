@@ -145,3 +145,17 @@
   position: relative;
   z-index: 1;
 }
+
+
+input:focus:invalid ,textarea:focus:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.582);
+  background:  rgba(211, 62, 87, 0.719);
+}
+ input:focus:invalid::placeholder {
+  color: aliceblue;
+} 
+
+input:valid ,textarea:valid {
+  border: 3px solid rgb(22, 224, 33);
+  background-image: linear-gradient(to right, rgb(236, 255, 192), rgb(31, 138, 72));
+}
