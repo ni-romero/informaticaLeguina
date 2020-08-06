@@ -1,5 +1,8 @@
 *{
   font-family: 'Red Rose', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0%;
 }
 .logoNav{
     height: 50px !important;
@@ -13,8 +16,10 @@
     background-color: rgba(0, 0, 0, 0.6)!important;
   }
   .padreGral{
+    /* background-image: url(https://i.pinimg.com/originals/5d/a0/4f/5da04f8387ab1bea3f9f11296902c6d2.gif); */
+    background-image: url(https://i.pinimg.com/originals/a2/d9/01/a2d901aa209df00d993291024ddc6c2d.gif);
+    /* background-image: url(https://knowledge.ni.com/servlet/rtaImage?eid=ka00Z000001Dy0V&feoid=00N0Z00000HEWRM&refid=0EM0Z000000Sih8); */
     /* background-image: url(https://images.unsplash.com/photo-1571639543218-31008677212d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); */
-    background-image: url(https://images.unsplash.com/photo-1480374178950-b2c449be122e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
     background-repeat:no-repeat; /* Indicamos que no se repetira */
 	background-size:cover; /* Encajamos la imagen al 100% del ancho */
 	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
@@ -28,6 +33,10 @@
   }
   .single-services{
     margin: 40px;
+  }
+  .serviInd{
+    text-shadow: 3px 3px 3px 3px whitesmoke;
+ 
   }
   .acercaPadre{
     height: 85vh;
@@ -114,14 +123,38 @@
     border:solid 2px rgb(9, 68, 95) ;
   }
   .imgAlgunTrab{
+  
     height: 300px;
+    
   }
   .footer{
     background-color: black;
   }
+  .TitulosGral{
+    display: inline-block;
+    position: relative;
+  }
+.TitulosGral::after, .TitulosGral::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+}
+.TitulosGral::after{
+  right: -120px;
+}
+.TitulosGral::before{
+  left: -120px;
+}
+  
   @media (min-width: 300px) and (max-width: 850px) {
     .mapaCont{
       width: 90%;
+    }
+    .single-services{
+      width: 95vw;
     }
     .imgAlgunTrab{
       width: 100%;
@@ -131,6 +164,39 @@
     }
     .cartaPreg{
       width: 95vw;
+      height: 80vh;
+    }
+    .acercaPadre{
+      width: 90vw;
+      height: 90vh !important;
+      overflow: scroll;
+    }
+    .padreServ{
+      width: 90vw;
+      height: 90vh !important;
+    }
+    .carousel{
+      height: 50vh;
+    }
+    .padrePregMas{
+      width: 80vw;
+      height: 90vh;
+      overflow: scroll;
+    }
+
+    .TitulosGral::after, .TitulosGral::before{
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: currentColor;
+      top: 0.6em;
+    }
+    .TitulosGral::after{
+      right: -60px;
+    }
+    .TitulosGral::before{
+      left: -60px;
     }
   }
   #particles-js {
