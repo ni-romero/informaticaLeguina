@@ -2,15 +2,15 @@
 
  formulario.addEventListener("submit", function (e) {
     e.preventDefault(); 
-     var datos = new FormData(formulario)
-
+     var datos = new FormData(formulario);
+    console.log(datos.get("email"))
 
 Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
+    Host : "smtp.wiroos.com",
+    Username : "info@leguinainformatica.com.ar",
+    Password : "pass",
+    To : 'info@leguinainformatica.com.ar',
+    From : datos.get("email"),
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
@@ -18,4 +18,3 @@ Email.send({
  
 );
  })
- 

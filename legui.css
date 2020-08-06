@@ -1,6 +1,10 @@
 *{
   font-family: 'Red Rose', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0%;
 }
+
 .logoNav{
     height: 50px !important;
   }
@@ -13,24 +17,32 @@
     background-color: rgba(0, 0, 0, 0.6)!important;
   }
   .padreGral{
+    /* background-image: url(https://i.pinimg.com/originals/5d/a0/4f/5da04f8387ab1bea3f9f11296902c6d2.gif); */
+    /* background-image: url(https://i.pinimg.com/originals/a2/d9/01/a2d901aa209df00d993291024ddc6c2d.gif); */
+    /* background-image: url(https://knowledge.ni.com/servlet/rtaImage?eid=ka00Z000001Dy0V&feoid=00N0Z00000HEWRM&refid=0EM0Z000000Sih8); */
     /* background-image: url(https://images.unsplash.com/photo-1571639543218-31008677212d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); */
-    background-image: url(https://images.unsplash.com/photo-1480374178950-b2c449be122e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
-    background-repeat:no-repeat; /* Indicamos que no se repetira */
-	background-size:cover; /* Encajamos la imagen al 100% del ancho */
-	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+    /* background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /*  Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen*/
  	font-family:helvetica, arial, sans-serif;
-	line-height:20px;  
+	line-height:20px;   
   }
   
   .padreServ{
-    height: 90vh;
+    height: 80%;
     margin: auto;
   }
   .single-services{
     margin: 40px;
   }
+  .serviInd{
+    text-shadow: 3px 3px 3px 3px whitesmoke;
+ 
+  }
   .acercaPadre{
-    height: 85vh;
+    width: 90%;
+    margin: auto;
+    height: 500px;
     background-color: white;
       opacity: 0.9;
   }
@@ -50,26 +62,29 @@
     background-color:white;
   }
   
-  /* .parrPreg{
+  .parrPreg{
   color:black !important;
   
-  } */
+  }
   .cartaPreg{
   color:black;
-   /* border-radius: 5px; */
    background-color: white;
-  
+   
+    width: auto;
+    height:250px;
   }
   .cartaPreg:hover{
     background-color: rgb(151, 150, 150);
     color: rgb(0, 0, 0);
     border: solid 1px rgb(9, 68, 95) ;
   }
-  .padreTeam{
-    height: 80vh;
-    padding: 50px;
-  
-  }
+   .padreTeam{
+    width: 90%;
+    padding-bottom: 5%;
+  /* aqui se solciono cuando lo comente a este clase */
+   } 
+
+    
 
   .section-headline-Contact h2{
     display: inline-block;
@@ -114,14 +129,64 @@
     border:solid 2px rgb(9, 68, 95) ;
   }
   .imgAlgunTrab{
-    height: 300px;
+    width: 300px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   .footer{
     background-color: black;
   }
+  .TitulosGral{
+    display: inline-block;
+    position: relative;
+  }
+.TitulosGral::after, .TitulosGral::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+} 
+.TitulosGral::after{
+  right: -120px;
+}
+.TitulosGral::before{
+  left: -120px;
+}
+@media (min-width: 850px) and (max-width: 1024px) {
+  .imgAlgunTrab{
+    width: 200px;
+  }
+  .mapaCont{
+    width: 100%;
+  }
+ .cartaPreg{
+  width: auto;
+  height:250px;
+ }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+ .acercaPadre{
+      width: 90%;
+      height: 90% ;
+    
+    } 
+    .formCont{
+      width: 100% !important;
+    }
+}
+
+
   @media (min-width: 300px) and (max-width: 850px) {
+      
+    
     .mapaCont{
       width: 90%;
+    }
+    .single-services{
+      width: auto;
     }
     .imgAlgunTrab{
       width: 100%;
@@ -129,16 +194,45 @@
     .formCont{
       width: 90%;
     }
-    .cartaPreg{
-      width: 95vw;
+   
+    /* .acercaPadre{
+      width: 90vw;
+      height: 90vh ;
+      overflow: scroll;
+    } */
+    /* .padreServ{
+      width: 90vw;
+      height: 90vh !important;
+    } */
+    
+    .padrePregMas{
+      width: 80vw;
+      height: 100px;
+      overflow: scroll;
+    }
+
+    .TitulosGral::after, .TitulosGral::before{
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: currentColor;
+      top: 0.6em;
+    }
+    .TitulosGral::after{
+      right: -60px;
+    }
+    .TitulosGral::before{
+      left: -60px;
     }
   }
   #particles-js {
     background-color: black;
-    opacity: 0.8;
-    position : absolute;
-    width:96%;
-    height:85%;
+    opacity: 1;
+     position: fixed ; /*solucion para el body */
+    display: block; /*solucion para el body */
+    width:100%;
+    height:100%;
     z-index:0;
 }
 .container-fluid h2 {
